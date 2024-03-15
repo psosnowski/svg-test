@@ -39,6 +39,19 @@ cells:
         - {color: "orange", level: 400}
         - {color: "red", level: 800}
     link: *grafana-home
+  time_agent:
+    dataRef: "time_agent"
+    label:
+      separator: "cr"
+      units: "ops"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "semi-dark-green", level: 0}
+        - {color: "orange", level: 400}
+        - {color: "red", level: 800}
+    link: *grafana-home
   old_requests:
     dataRef: "old_requests"
     label:
