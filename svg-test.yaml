@@ -13,14 +13,8 @@ anchorLinks:
 
 cellIdPreamble: "cell-"
 cells: 
-  drawio:
-    link:
-      url: "https://app.diagrams.net/?p=svgdata"
-  docs:
-    link:
-      url: ""
-  inbox_depth:
-    dataRef: "total-requests"
+  total_requests:
+    dataRef: "total_requests"
     label:
       separator: "cr"
       units: "none"
@@ -32,7 +26,7 @@ cells:
         - {color: "orange", level: 500}
         - {color: "red", level: 1000}
     link: *grafana-home
-  db_transactions:
+  new_requests:
     dataRef: "new_requests"
     label:
       separator: "cr"
@@ -45,7 +39,7 @@ cells:
         - {color: "orange", level: 400}
         - {color: "red", level: 800}
     link: *grafana-home
-  start_rate:
+  resolutions:
     dataRef: "resolutions"
     label:
       separator: "colon"
