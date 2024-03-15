@@ -88,6 +88,32 @@ cells:
       gradientMode: "hue"
       thresholds:
         - {color: "semi-dark-green", level: 0}
-        - {color: "orange", level: 400}
-        - {color: "red", level: 800}
+        - {color: "orange", level: 50}
+        - {color: "red", level: 80}
+    link: *grafana-home
+  max:
+    dataRef: "max"
+    label:
+      separator: "cr"
+      units: "sec"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "semi-dark-green", level: 0}
+        - {color: "orange", level: 50}
+        - {color: "red", level: 80}
+    link: *grafana-home
+  avg:
+    dataRef: "avg"
+    label:
+      separator: "cr"
+      units: "sec"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "semi-dark-green", level: 0}
+        - {color: "orange", level: 50}
+        - {color: "red", level: 80}
     link: *grafana-home
