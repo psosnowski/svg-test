@@ -65,3 +65,16 @@ cells:
         - {color: "orange", level: 100}
         - {color: "red", level: 800}
     link: *grafana-home
+  min:
+    dataRef: "min"
+    label:
+      separator: "cr"
+      units: "sec"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "semi-dark-green", level: 0}
+        - {color: "orange", level: 400}
+        - {color: "red", level: 800}
+    link: *grafana-home
