@@ -40,7 +40,7 @@ cells:
         - {color: "red", level: 800}
     link: *grafana-home
   old_requests:
-    dataRef: "new_requests"
+    dataRef: "old_requests"
     label:
       separator: "cr"
       units: "ops"
