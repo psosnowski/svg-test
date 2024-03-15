@@ -42,7 +42,7 @@ cells:
   resolutions:
     dataRef: "resolutions"
     label:
-      separator: "colon"
+      separator: "cr"
       units: "pps"
       decimalPoints: 0
     labelColor:
@@ -50,4 +50,5 @@ cells:
       thresholds:
         - {color: "green", level: 0}
         - {color: "orange", level: 100}
+        - {color: "red", level: 800}
     link: *grafana-home
