@@ -1,0 +1,93 @@
+---
+
+#------------------------------------------------------------------------------
+# YAML Aliases to simplify maintenance
+
+anchorLinks:
+  - link: &grafana-home
+      url: "https://grafana.com/"
+      params: "time"
+
+#------------------------------------------------------------------------------
+# Panel Config
+
+cellIdPreamble: "cell-"
+cells: 
+  new_issues:
+    dataRef: "new_issues"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "semi-dark-green", level: 0}
+        - {color: "orange", level: 400}
+        - {color: "red", level: 800}
+    link: *grafana-home
+  in_progress:
+    dataRef: "in_progress"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "semi-dark-green", level: 0}
+        - {color: "orange", level: 400}
+        - {color: "red", level: 800}
+    link: *grafana-home
+  on_hold:
+    dataRef: "on_hold"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "semi-dark-green", level: 0}
+        - {color: "orange", level: 400}
+        - {color: "red", level: 800}
+    link: *grafana-home
+  resolved:
+    dataRef: "resolved"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "semi-dark-green", level: 0}
+        - {color: "orange", level: 400}
+        - {color: "red", level: 800}
+    link: *grafana-home
+  closed:
+    dataRef: "closed"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "semi-dark-green", level: 0}
+        - {color: "orange", level: 400}
+        - {color: "red", level: 800}
+    link: *grafana-home
+  cancelled:
+    dataRef: "cancelled"
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "semi-dark-green", level: 0}
+        - {color: "orange", level: 400}
+        - {color: "red", level: 800}
+    link: *grafana-home
